@@ -31,6 +31,9 @@ function Show(props) {
           />
           <button>Update Todo</button>
         </Form>
+        <Form method="post" action={`/delete/${post.id}`}>
+            <button>Delete Todo</button>
+        </Form>
       </div>
       <Link to="/">Back to Index</Link>
     </div>
